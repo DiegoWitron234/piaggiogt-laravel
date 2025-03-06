@@ -49,7 +49,7 @@
                         <div class="row align-items-center">
                             <div class="col-md-5">
                                 @if($moto->imagen)
-                                    <img src="{{ asset('storage/' . $moto->imagen) }}" alt="{{ $moto->modelo }}" class="img-fluid rounded hover-lift">
+                                    <img src="{{ asset('motos/' . $moto->imagen) }}" alt="{{ $moto->modelo }}" class="img-fluid rounded hover-lift">
                                 @else
                                     <img src="{{ asset('main/images/placeholder.png') }}" alt="Sin imagen" class="img-fluid rounded hover-lift">
                                 @endif

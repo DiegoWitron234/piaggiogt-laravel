@@ -33,7 +33,7 @@
                 <img src="{{ asset('main/images/banner3.jpg') }}" class="d-block w-100" alt="Modelo 3">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('main/images/Banner4.jpg') }}" class="d-block w-100" alt="Modelo 3">
+                <img src="{{ asset('main/images/Banner4.png') }}" class="d-block w-100" alt="Modelo 3">
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('main/images/Banner5.png') }}" class="d-block w-100" alt="Modelo 3">

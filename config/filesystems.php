@@ -60,6 +60,12 @@ return [
             'report' => false,
         ],
 
+        'motos_public' => [
+            'driver' => 'local',
+            'root'   => public_path('motos'),
+            'url'    => env('APP_URL') . '/motos',
+            'visibility' => 'public',
+        ],
     ],
 
     /*
