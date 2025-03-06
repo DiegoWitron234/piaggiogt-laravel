@@ -82,7 +82,7 @@
                 <p class="lead">"Desde que adquirí mi Ape City, mi negocio ha mejorado notablemente. Es económico, confiable y el servicio es insuperable. ¡Totalmente recomendado!"</p>
             </div>
             <div class="col-md-5">
-                <img src="{{ asset('main/images/persona1.jpg') }}" class="img-fluid rounded hover-lift" alt="Ape City">
+                <img src="{{ asset('main/images/TEST1.jpg') }}" class="img-fluid rounded hover-lift" alt="Ape City">
             </div>
         </div>
 
@@ -94,7 +94,7 @@
                 <p class="lead">"La eficiencia y comodidad del Ape City NXT me han permitido ofrecer un servicio de calidad a mis clientes. Es un vehículo innovador y seguro."</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img src="{{ asset('main/images/persona2.jpg') }}" class="img-fluid rounded hover-lift" alt="Ape City NXT">
+                <img src="{{ asset('main/images/TEST2.jpg') }}" class="img-fluid rounded hover-lift" alt="Ape City NXT">
             </div>
         </div>
 

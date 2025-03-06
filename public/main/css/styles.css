@@ -3,15 +3,17 @@
     --color-principal: #5fa0d7; /* El color de las barras */
     --blanco: #ffffff;
     --gris-oscuro: #333333;
-    --negro: #000000;
+    --negro: #ffffff;
 }
 
 
 /* Pie de página */
 footer.bg-light {
     background-color: var(--color-principal)!important;
+    background-image: url('../images/barra completa.jpg');
     color: var(--negro);
     text-align: center;
+    height: 233px;
     padding: 10px;
 }
 
