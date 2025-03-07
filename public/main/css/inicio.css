@@ -22,12 +22,10 @@
 /* Estilos para las opiniones en featurettes */
 .featurette-heading {
   font-size: 2rem;
+  margin-top: 0;
 }
 
 .text-body-secondary {
   font-size: 1.2rem;
   color: #6c757d;
 }
-
-
-

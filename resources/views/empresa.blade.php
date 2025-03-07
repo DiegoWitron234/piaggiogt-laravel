@@ -39,6 +39,7 @@
                             Ape no tiene rivales en cuanto a tamaño, maniobrabilidad, economicidad y robustez. La gama, amplia y variada, incluye modelos capaces de satisfacer diversas necesidades profesionales, así como el ocio de los clientes que buscan un vehículo personal y diferente para moverse.
                             <br><br>
                             Los vehículos de carga son ya un clásico de la cultura italiana. Sin embargo, el éxito de Ape supera ampliamente los confines del viejo continente, y hoy es un auténtico éxito mundial. En Latinoamérica, como en otras partes del mundo, el Ape se utiliza para satisfacer las necesidades de transporte de mercancías y pasajeros.
+                            <br><br>
                         </p>
                     </div>
                     <button id="btn-leer-mas" class="btn btn-link">Leer más</button>
@@ -120,6 +121,7 @@
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="{{ asset('main/js/empresa.js') }}"></script>
     <script>
         AOS.init();
     </script>

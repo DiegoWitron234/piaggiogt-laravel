@@ -76,7 +76,7 @@
     <hr class="featurette-divider" data-aos="fade-up">
 
     <div class="container" data-aos="fade-up">
-        <div class="row featurette">
+        <div class="row featurette align-items-start" data-aos="fade-up">
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">“Ape City cambió mi forma de movilizarme.” <span class="text-body-secondary">- Juan Pérez</span></h2>
                 <p class="lead">"Desde que adquirí mi Ape City, mi negocio ha mejorado notablemente. Es económico, confiable y el servicio es insuperable. ¡Totalmente recomendado!"</p>
