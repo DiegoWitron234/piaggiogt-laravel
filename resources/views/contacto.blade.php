@@ -19,7 +19,7 @@
                 <!-- Información de contacto -->
                 <div class="col-md-6 mb-4 contacto-info">
                     <h3>Información de Contacto</h3>
-                    <p><strong>Dirección:</strong> Av. Central Oriente No.1487-B, entre 13 y 14 Oriente, Col. Centro, Tuxtla Gutiérrez, Chiapas. C.P.29000</p>
+                    <p><strong>Dirección:</strong> Carretera El Salvador KM. 18.5 Guatemala, Guatemala.</p>
                     <p><strong>Teléfono:</strong> 40484777</p>
                     <p><strong>Email:</strong> <a href="mailto:ventas@piaggiogt.com">ventas@piaggiogt.com</a></p>
                     <p><strong>Horarios de Atención:</strong> Lunes a Viernes de 9:00 AM a 6:00 PM<br>Sábados de 9:00 AM a 2:00 PM</p>
