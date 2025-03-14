@@ -11,33 +11,31 @@
 
 @section('content')
 
-    <!-- Carousel Principal -->
+
+    @php
+        // Obtiene todos los banners. Puedes ajustar la consulta (orden, cantidad, etc.)
+        $banners = \App\Models\Banner::orderBy('created_at', 'asc')->get();
+    @endphp
+
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false" data-aos="fade-in">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            @foreach ($banners as $banner)
+                <button type="button"
+                        data-bs-target="#myCarousel"
+                        data-bs-slide-to="{{ $loop->index }}"
+                        class="{{ $loop->first ? 'active' : '' }}"
+                        aria-current="{{ $loop->first ? 'true' : '' }}"
+                        aria-label="Slide {{ $loop->index + 1 }}"></button>
+            @endforeach
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                    <img src="{{ asset('main/images/Banner1.png') }}" class="d-block w-100" alt="Modelo 1">
-                    <!-- Overlay para oscurecer la imagen y mejorar la legibilidad -->
+            @foreach ($banners as $banner)
+                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                    <img src="{{ asset('banners/' . $banner->imagen) }}" class="d-block w-100" alt="{{ $banner->titulo }}">
+                    <!-- Overlay para oscurecer la imagen, si se requiere -->
                     <div class="carousel-overlay"></div>
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('main/images/Banner2.png') }}" class="d-block w-100" alt="Modelo 2">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('main/images/banner3.jpg') }}" class="d-block w-100" alt="Modelo 3">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('main/images/Banner4.png') }}" class="d-block w-100" alt="Modelo 3">
-            </div>
-            <div class="carousel-item">
-                <img src="{{ asset('main/images/Banner5.png') }}" class="d-block w-100" alt="Modelo 3">
-            </div>
+                </div>
+            @endforeach
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -48,6 +46,7 @@
             <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
+
 
     <!-- Sección de Modelos Populares -->
     <div class="container marketing" data-aos="fade-up">

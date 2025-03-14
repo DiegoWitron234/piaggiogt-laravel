@@ -3,21 +3,20 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\BannerResource\Pages;
-use App\Filament\Resources\BannerResource\RelationManagers;
 use App\Models\Banner;
 use Filament\Forms;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class BannerResource extends Resource
 {
     protected static ?string $model = Banner::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-photograph';
+    protected static ?string $navigationIcon = 'heroicon-o-truck';
 
     public static function form(Form $form): Form
     {
@@ -34,7 +33,7 @@ class BannerResource extends Resource
                     ->image()
                     ->disk('banners_public')  // Disco nuevo
                     ->directory('') // Se guardará en public/banners
-                    ->maxSize(10240),   // Tamaño máximo en kilobytes
+                    ->maxSize(5024),   // Tamaño máximo en kilobytes
             ]);
     }
 
@@ -50,12 +49,9 @@ class BannerResource extends Resource
                 // Mostrar una miniatura de la imagen
                 Tables\Columns\ImageColumn::make('imagen')
                     ->label('Imagen')
-                    ->disk('banners_public')
-                    ->directory(''),
+                    ->disk('banners_public'),
             ])
-            ->filters([
-                //
-            ])
+            ->filters([])
             ->actions([
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
@@ -67,9 +63,7 @@ class BannerResource extends Resource
 
     public static function getRelations(): array
     {
-        return [
-            //
-        ];
+        return [];
     }
 
     public static function getPages(): array

@@ -17,7 +17,7 @@ class MotoResource extends Resource
 {
     protected static ?string $model = Moto::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-truck'; // Puedes elegir otro icono
+    protected static ?string $navigationIcon = 'heroicon-o-truck';
 
     public static function form(Form $form): Form
     {
