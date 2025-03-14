@@ -12,11 +12,13 @@
 @section('content')
 
 
+    <!-- Consulta a la BD -->
     @php
         // Obtiene todos los banners. Puedes ajustar la consulta (orden, cantidad, etc.)
         $banners = \App\Models\Banner::orderBy('created_at', 'asc')->get();
     @endphp
 
+    <!-- Carrusel -->
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false" data-aos="fade-in">
         <div class="carousel-indicators">
             @foreach ($banners as $banner)
@@ -49,6 +51,10 @@
 
 
     <!-- Sección de Modelos Populares -->
+    <div class="container text-center my-2" data-aos="fade-up">
+        <h1 class="display-5">Modelos populares</h1>
+        <p class="lead">Mira nuestros modelos más populares entre nuestros clientes</p>
+    </div>
     <div class="container marketing" data-aos="fade-up">
         <div class="row justify-content-center">
             <div class="col-lg-4 text-center mb-4">
