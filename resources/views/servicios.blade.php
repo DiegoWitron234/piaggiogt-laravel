@@ -12,7 +12,7 @@
 @section('content')
 
     <!-- Encabezado -->
-    <section class="single-page-header" style="background-image: url('https://piaggiomx.com/images/cabeceras/c935ddfe3ff4748fa5593a4b756a8a95.webp'); background-size: cover; background-position: center;">
+    <section class="single-page-header">
         <div class="container text-center py-5" data-aos="fade-in">
             <h1 class="display-4 text-white">Servicios</h1>
             <p class="lead text-white">Conoce nuestros servicios.</p>
@@ -53,8 +53,8 @@
     <section class="section position-relative talleres-section" id="talleres">
         <!-- Overlay para oscurecer la imagen de fondo -->
         <div class="overlay"></div>
-        <div class="container pb-5 position-relative" style="z-index: 2;" data-aos="fade-up">
-            <div class="row pb-5">
+        <div class="container position-relative" style="z-index: 2;" data-aos="fade-up">
+            <div class="row align-items-center">
                 <div class="col-md-7 mx-auto text-white text-center">
                     <h1>Talleres Cercanos</h1>
                     <div class="mb-3 descripcion">
@@ -64,14 +64,12 @@
                         <a href="https://api.whatsapp.com/send?phone=50240484777" target="_blank" class="btn btn-servicios m-2">
                             Contacta a tu asesor
                         </a>
-                        <a href="https://www.google.com/maps/d/edit?mid=1A-CIsaTFx7d9rQ0CRurCyV7OtYnpBMo&usp=sharing" target="_blank" class="btn btn-servicios m-2">
-                            Conoce tu centro de servicio más cercano
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

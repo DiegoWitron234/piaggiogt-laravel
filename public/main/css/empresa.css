@@ -1,8 +1,34 @@
 /* Estilos específicos para la página Empresa */
 
+.single-page-header {
+    position: relative; /* Necesario para posicionar el overlay */
+    background-image: url('https://piaggiomx.com/images/cabeceras/c935ddfe3ff4748fa5593a4b756a8a95.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Pseudo-elemento para oscurecer la imagen de fondo */
+.single-page-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según lo necesites */
+    z-index: 1;
+}
+
+/* Asegúrate de que el contenido se muestre por encima del overlay */
+.single-page-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+
 /* Efecto para el contenedor de historia */
 .historia-contenedor {
-  max-height: 250px; /* Altura inicial, ajústala según el contenido deseado */
+  max-height: 250px; /* Altura inicial */
   overflow: hidden;
   position: relative;
   transition: max-height 0.5s ease;

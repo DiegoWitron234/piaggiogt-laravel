@@ -79,7 +79,7 @@
             display: block !important;
         }
         body {
-            padding-top: 70px; /* Ajustar según la altura del navbar */
+            padding-top: 70px;
         }
     </style>
 

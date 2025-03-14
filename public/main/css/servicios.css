@@ -5,13 +5,50 @@
   background-color: #e8e8e8;
 }
 
+.single-page-header {
+    position: relative; /* Necesario para posicionar el overlay */
+    background-image: url('https://piaggiomx.com/images/cabeceras/c935ddfe3ff4748fa5593a4b756a8a95.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Pseudo-elemento para oscurecer la imagen de fondo */
+.single-page-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según lo necesites */
+    z-index: 1;
+}
+
+/* Asegúrate de que el contenido se muestre por encima del overlay */
+.single-page-header .container {
+    position: relative;
+    z-index: 2;
+}
+
 /* Estilos para el contenedor de Talleres */
 .talleres-section {
-  background-image: url('https://piaggiomx.com/images/servicios/a06b6c2ad06ef388991569664545e084.webp');
-  background-size: cover;
-  background-position: center;
-  position: relative;
+    background-image: url('https://piaggiomx.com/images/servicios/a06b6c2ad06ef388991569664545e084.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.talleres-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Overlay para oscurecer la imagen de fondo en Talleres */
 .talleres-section .overlay {

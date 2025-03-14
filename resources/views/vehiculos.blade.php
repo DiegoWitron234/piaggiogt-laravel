@@ -58,7 +58,7 @@
                                 <h4 class="mb-3">Descripción</h4>
                                 <p>{{ $moto->descripcion }}</p>
                                 <h4 class="mb-3">Precio</h4>
-                                <h5>{{ $moto->precio }} Quetzales</h5>
+                                <h5>Q{{ number_format($moto->precio, 2, '.', ',') }}</h5>
                             </div>
                         </div>
                     </section>

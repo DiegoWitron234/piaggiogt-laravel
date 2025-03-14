@@ -11,7 +11,7 @@
 
 @section('content')
     <!-- Encabezado -->
-    <section class="single-page-header" style="background-image: url('https://piaggiomx.com/images/cabeceras/c935ddfe3ff4748fa5593a4b756a8a95.webp'); background-size: cover;">
+    <section class="single-page-header">
         <div class="container text-center py-5" data-aos="fade-in">
             <h1 class="display-4 text-white">Empresa</h1>
             <p class="lead text-white">Conoce nuestra historia, misión, visión y valores como empresa.</p>

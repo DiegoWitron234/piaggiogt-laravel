@@ -66,6 +66,13 @@ return [
             'url'    => env('APP_URL') . '/motos',
             'visibility' => 'public',
         ],
+
+        'banners_public' => [
+            'driver' => 'local',
+            'root'   => public_path('banners'),
+            'url'    => env('APP_URL') . '/banners',
+            'visibility' => 'public',
+        ],
     ],
 
     /*
