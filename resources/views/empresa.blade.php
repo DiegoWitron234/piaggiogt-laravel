@@ -58,7 +58,14 @@
                 <div class="col-md-8 text-center">
                     <h2 class="text-primary mb-4">Quiénes somos</h2>
                     <p>
-                        Moto Galería es una empresa fundada el 11 de Agosto de 2006 por un grupo familiar de Chiapas dedicada a la comercialización de moto carros. En el año 2019 se crean lazos con la marca Piaggio y a raíz de esta unión Moto Galería se convierte en importadora y exportadora de moto carros de pasajeros, pick ups y refacciones. Desde entonces, Moto Galería en conjunto con Piaggio se ha expandido a lugares como Colombia, Guatemala, Perú y Estados Unidos.
+                        Moto Galería es una empresa fundada el 11 de Agosto de 2006 por una empresa familiar mexicana
+                        con cobertura en toda Latinoamérica dedicada a la comercialización de moto carros.
+                        En el año 2019 se crean lazos con la marca Piaggio y a raíz de esta unión Moto Galería se
+                        convierte en importadora y exportadora de moto carros de pasajeros, pick ups y repuestos.
+                        Desde entonces, Moto Galería en conjunto con Piaggio se ha expandido a lugares como Colombia,
+                        Perú y Estados Unidos. En territorio nacional guatemalteco contamos con el soporte de centros
+                        de servicios autorizados, soporte y sucursales propias para dar solidez y respaldo a nuestros
+                        clientes.
                     </p>
                 </div>
             </div>
@@ -72,7 +79,7 @@
                 <div class="col-md-6">
                     <h2 class="text-primary">Misión</h2>
                     <p class="lead">
-                        Ser una empresa que brinde mejores oportunidades de empleo, autoempleo o de negocio a las personas, a través de nuestros mototaxis con el mejor servicio postventa y refacciones.
+                        Ser una empresa que brinde mejores oportunidades de empleo, autoempleo o de negocio a las personas, a través de nuestros mototaxis con el mejor servicio postventa y repuestos.
                     </p>
                 </div>
                 <div class="col-md-6">

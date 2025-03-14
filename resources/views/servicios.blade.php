@@ -38,7 +38,7 @@
                             La garantía de su vehículo PIAGGIO es de 12 meses o 12,000 kilómetros, lo que ocurra primero, contada a partir de la fecha de entrega al cliente. Es fundamental que las revisiones y el mantenimiento indicados en esta póliza se realicen en un centro de servicio autorizado PIAGGIO para hacerla efectiva.
                         </p>
                         <p>
-                            No entran en garantía las partes que sufren desgaste por uso normal, tales como: bujías, focos, componentes del encendido, balatas de freno, discos de embrague, cables, llantas, yugo, sistema eléctrico, rines, lona, batería, filtros, espejos, cámara, claxon, etc.
+                            No entran en garantía las partes que sufren desgaste por uso normal, tales como: candelas, silbines, componentes del encendido, fricciones de freno, discos de embrague, cables, llantas, yugo, sistema eléctrico, aros, lona, batería, filtros, espejos, cámara, claxon, etc.
                         </p>
                         <p>
                             Las únicas partes eléctricas con garantía de 30 días o 300 km son el estator y el CDI, siempre que se utilicen conforme a las especificaciones de Moto Galería.

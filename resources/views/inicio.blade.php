@@ -53,7 +53,7 @@
     <!-- Sección de Modelos Populares -->
     <div class="container text-center my-2" data-aos="fade-up">
         <h1 class="display-5">Modelos populares</h1>
-        <p class="lead">Mira nuestros modelos más populares entre nuestros clientes</p>
+        <p class="lead mb-5">Mira nuestros modelos más populares entre nuestros clientes</p>
     </div>
     <div class="container marketing" data-aos="fade-up">
         <div class="row justify-content-center">
@@ -65,8 +65,8 @@
             </div>
             <div class="col-lg-4 text-center mb-4">
                 <img src="{{ asset('main/images/apecitynxt.webp') }}" class="img-fluid hover-lift img-small" alt="Ape City NXT">
-                <h2 class="fw-normal mt-3">Ape City NXT</h2>
-                <p>La suavidad de manejo y las características de Piaggio hacen del Ape City NXT una opción ideal para ofrecer un servicio de calidad a tus clientes.</p>
+                <h2 class="fw-normal mt-3">Ape City NXT+</h2>
+                <p>La suavidad de manejo y las características de Piaggio hacen del Ape City NXT+ una opción ideal para ofrecer un servicio de calidad a tus clientes.</p>
                 <p><a class="btn btn-secondary" href="{{ route('vehiculos') }}">Ver detalles &raquo;</a></p>
             </div>
         </div>
@@ -95,11 +95,11 @@
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">“El Ape City NXT es mi mejor inversión.” <span class="text-body-secondary">- María López</span></h2>
-                <p class="lead">"La eficiencia y comodidad del Ape City NXT me han permitido ofrecer un servicio de calidad a mis clientes. Es un vehículo innovador y seguro."</p>
+                <h2 class="featurette-heading fw-normal lh-1">“El Ape City NXT+ es mi mejor inversión.” <span class="text-body-secondary">- María López</span></h2>
+                <p class="lead">"La eficiencia y comodidad del Ape City NXT+ me han permitido ofrecer un servicio de calidad a mis clientes. Es un vehículo innovador y seguro."</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img src="{{ asset('main/images/TEST2.jpg') }}" class="img-fluid rounded hover-lift" alt="Ape City NXT">
+                <img src="{{ asset('main/images/TEST2.jpg') }}" class="img-fluid rounded hover-lift" alt="Ape City NXT+">
             </div>
         </div>
 
