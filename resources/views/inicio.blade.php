@@ -55,22 +55,79 @@
         <h1 class="display-5">Modelos populares</h1>
         <p class="lead mb-5">Mira nuestros modelos más populares entre nuestros clientes</p>
     </div>
+
     <div class="container marketing" data-aos="fade-up">
         <div class="row justify-content-center">
+
+            <!-- Bloque del Ape City -->
             <div class="col-lg-4 text-center mb-4">
-                <img src="{{ asset('main/images/apecity.webp') }}" class="img-fluid hover-lift img-small" alt="Ape City">
+                <!-- Contenedor que agrupa la imagen principal y los “botones” de color -->
+                <div class="color-switcher">
+                    <!-- Imagen principal (por defecto mostramos la verde, por ejemplo) -->
+                    <img id="apeCityMainImage"
+                         src="{{ asset('main/images/ape-city/apecityverde.webp') }}"
+                         class="img-fluid hover-lift img-small"
+                         alt="Ape City">
+
+                    <!-- Opciones de color -->
+                    <div class="color-options d-flex justify-content-center mt-3">
+                        <!-- Cada div representa un color. data-img guarda la ruta de la imagen a mostrar al hacer clic -->
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city/apecityverde.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #006800; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city/apecityamarillo.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #f99e04; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city/apecityrojo.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #ca0110; cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+
                 <h2 class="fw-normal mt-3">Ape City</h2>
                 <p>Por sus características técnicas, confort, avances tecnológicos, diseño y el respaldo de una gran marca, APE CITY es tu mejor opción para el servicio de mototaxi.</p>
                 <p><a class="btn btn-secondary" href="{{ route('vehiculos') }}">Ver detalles &raquo;</a></p>
             </div>
+
+            <!-- Bloque del Ape City NXT+ -->
             <div class="col-lg-4 text-center mb-4">
-                <img src="{{ asset('main/images/apecitynxt.webp') }}" class="img-fluid hover-lift img-small" alt="Ape City NXT">
+                <div class="color-switcher">
+                    <img id="apeCityNxtMainImage"
+                         src="{{ asset('main/images/ape-city-nxt/nxtverde.webp') }}"
+                         class="img-fluid hover-lift img-small"
+                         alt="Ape City NXT+">
+
+                    <div class="color-options d-flex justify-content-center mt-3">
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtverde.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #006800; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtamarillo.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #f99e04; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtazul.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #0175cb; cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+
                 <h2 class="fw-normal mt-3">Ape City NXT+</h2>
                 <p>La suavidad de manejo y las características de Piaggio hacen del Ape City NXT+ una opción ideal para ofrecer un servicio de calidad a tus clientes.</p>
                 <p><a class="btn btn-secondary" href="{{ route('vehiculos') }}">Ver detalles &raquo;</a></p>
             </div>
+
         </div>
     </div>
+
 
     <!-- Sección de Opiniones -->
     <div class="container text-center my-5" data-aos="fade-up">
@@ -108,6 +165,7 @@
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="{{ asset('/main/js/inicio.js')}}"></script>
     <script>
         AOS.init({
             duration: 800,

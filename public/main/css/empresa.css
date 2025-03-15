@@ -50,12 +50,15 @@
   margin: 1rem auto 0;
 }
 
-/* Animaciones adicionales ya se aplican con AOS, pero si deseas agregar transiciones personalizadas, puedes hacerlo aquí */
+/* Aquí podríamos agregar animaciones aparte de las AOS */
 
-/* Ejemplo: efecto hover para imágenes de valores */
+/* Efecto hover para imágenes de valores */
 #valores img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 120px; /* Tamaño de los íconos */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 #valores img:hover {
   transform: translateY(-5px);
