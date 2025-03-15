@@ -39,10 +39,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
+                <!--
                 <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'inicio' ? 'active' : '' }}"
                        href="{{ route('inicio') }}">Inicio</a>
                 </li>
+                -->
                 <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'empresa' ? 'active' : '' }}"
                        href="{{ route('empresa') }}">Empresa</a>
