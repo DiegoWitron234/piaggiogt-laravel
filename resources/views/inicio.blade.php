@@ -65,7 +65,7 @@
                 <div class="color-switcher">
                     <!-- Imagen principal (por defecto mostramos la verde, por ejemplo) -->
                     <img id="apeCityMainImage"
-                         src="{{ asset('main/images/ape-city/apecityverde.webp') }}"
+                         src="{{ asset('main/images/ape-city/apecityrojo.webp') }}"
                          class="img-fluid hover-lift img-small"
                          alt="Ape City">
 
@@ -75,6 +75,31 @@
                         <div class="color-circle mx-1"
                              data-img="{{ asset('main/images/ape-city/apecityverde.webp') }}"
                              style="width: 25px; height: 25px; border-radius: 50%; background-color: #006800; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city/apecityazuloscuro.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #0000b8; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city/apecityceleste.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #20979f; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city/apecitynegro.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #000000; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city/apecityblanco.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #eeeeee; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city/apecityceleste.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #0a78d7; cursor: pointer;">
                         </div>
 
                         <div class="color-circle mx-1"
@@ -109,13 +134,38 @@
                         </div>
 
                         <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtazuloscuro.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #0000b8; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtceleste.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #20979f; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtnegro.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #000000; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtblanco.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #eeeeee; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtceleste.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #0a78d7; cursor: pointer;">
+                        </div>
+
+                        <div class="color-circle mx-1"
                              data-img="{{ asset('main/images/ape-city-nxt/nxtamarillo.webp') }}"
                              style="width: 25px; height: 25px; border-radius: 50%; background-color: #f99e04; cursor: pointer;">
                         </div>
 
                         <div class="color-circle mx-1"
-                             data-img="{{ asset('main/images/ape-city-nxt/nxtazul.webp') }}"
-                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #0175cb; cursor: pointer;">
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtrojo.webp') }}"
+                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #ca0110; cursor: pointer;">
                         </div>
                     </div>
                 </div>
