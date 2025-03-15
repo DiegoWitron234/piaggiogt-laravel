@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contacto Corporativo - Piaggio GT')
+@section('title', 'Distribuidor - Piaggio GT')
 
 @section('extra_head')
     <!-- Estilos personalizados para esta página -->
@@ -160,59 +160,7 @@
         </div>
     </div>
 
-    <!-- Cabecera de navegación -->
-    <header class="navigation fixed-top sticky-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light px-0">
-                <a class="navbar-brand logo" href="https://www.piaggiomx.com">
-                    <img class="logo-default" src="{{ asset('images/logo1.png') }}" alt="logo" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navigation">
-                    <ul class="navbar-nav text-center">
-                        <!-- Opción "Inicio" comentada, descomenta si es necesaria
-                        <li class="nav-item">
-                          <a class="nav-link" href="https://www.piaggiomx.com">Inicio</a>
-                        </li>
-                        -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.piaggiomx.com/mundo-piaggio">Mundo Piaggio</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown02" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Vehículos <i class="tf-ion-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown02">
-                                <li><a class="dropdown-item" href="https://www.piaggiomx.com/vehiculos/ape-city">Ape City</a></li>
-                                <li><a class="dropdown-item" href="https://www.piaggiomx.com/vehiculos/ape-city-nxt">Ape City NXT</a></li>
-                                <li><a class="dropdown-item" href="https://www.piaggiomx.com/vehiculos/ape-xtra-x">Ape Xtra X</a></li>
-                                <li><a class="dropdown-item" href="https://www.piaggiomx.com/vehiculos/ape-xtra-dx">Ape Xtra DX</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdownUbicaciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Ubicaciones <i class="tf-ion-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownUbicaciones">
-                                <li><a class="dropdown-item" href="https://www.piaggiomx.com/distribuidores">Distribuidores</a></li>
-                                <li><a class="dropdown-item" href="https://www.piaggiomx.com/servicios">Servicios</a></li>
-                                <li><a class="dropdown-item" href="https://www.piaggiomx.com/refacciones">Refacciones</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.piaggiomexico.com/" target="_blank">Refacciones</a>
-                        </li>
-                    </ul>
-                </div>
-                <a class="navbar-brand logo" href="https://www.piaggiomx.com">
-                    <img class="logo-default" src="{{ asset('images/logo_moto.png') }}" alt="logo" />
-                </a>
-            </nav>
-        </div>
-    </header>
+
 
     <!-- Cabecera de sección con imagen de fondo -->
     <section class="single-page-header" style="background-image: url('{{ asset('images/redes.jpg') }}');">
@@ -239,7 +187,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <form action="{{ route('peticion.distribuidor') }}" method="POST" class="form row align-items-baseline" id="form_distribuidor">
+                    <form class="form row align-items-baseline" id="form_distribuidor">
                         @csrf
                         <div class="mb-3 col-md-6">
                             <label for="nombre">Nombre(s)</label>
@@ -376,93 +324,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer id="footer" class="bg-one">
-        <div class="top-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-4 mb-md-5 mb-md-0">
-                        <ul class="list-unstyled">
-                            <li><h3>Contáctanos</h3></li>
-                            <li class="d-flex align-items-center footer-info">
-                                <div><i class="fa-solid fa-map-marker"></i></div>
-                                <div>
-                                    <label class="h5 text-white m-0 w-100">Ubicación</label>
-                                    <p class="p-0">Av. Central Oriente No.1487-B, entre 13 y 14 Oriente, Col. Centro, Tuxtla Gutiérrez, Chiapas. C.P.29000</p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center footer-info">
-                                <div><i class="fa-solid fa-envelope"></i></div>
-                                <div>
-                                    <label class="h5 text-white m-0 w-100">Correo Electrónico</label>
-                                    <p class="p-0">contactoventas@piaggiomx.com</p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center footer-info">
-                                <div><i class="fa-solid fa-phone"></i></div>
-                                <div>
-                                    <label class="h5 text-white m-0 w-100">Números Telefónicos</label>
-                                    <p class="p-0">961 106 0419</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr class="d-block d-md-none col-10 mx-auto">
-                    <div class="col-12 col-md-4 mb-md-5 mb-md-0">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="list-unstyled">
-                                    <li><h3>Políticas</h3></li>
-                                    <li>
-                                        <a href="https://www.piaggiomx.com/aviso-privacidad">
-                                            <i class="fa-solid fa-arrow-right"></i> Aviso de privacidad
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-8">
-                                <ul class="list-unstyled">
-                                    <li><h3>Trabaja con nosotros</h3></li>
-                                    <li>
-                                        <a href="mailto:martin.jimenez@piaggiomx.com">
-                                            <i class="fa-solid fa-arrow-right"></i> Enviar CV
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-8">
-                                <ul class="list-unstyled">
-                                    <li><h3>Soporte</h3></li>
-                                    <li>
-                                        <a href="https://questionpro.com/t/AWdsJZ42qw">
-                                            <i class="fa-solid fa-arrow-right"></i> Línea de atención
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-8 col-md-4">
-                        <div class="row">
-                            <div class="col-md-4 col-6 text-center">
-                                <img src="{{ asset('images/logo_moto_footer.png') }}" alt="logo" class="img-fluid" id="logo_footer">
-                            </div>
-                            <div class="col-md-4 col-6 text-center">
-                                <img src="{{ asset('images/logo3.png') }}" alt="logo" class="img-fluid" id="logo_footer">
-                            </div>
-                            <div class="col-md-4 col-6 text-center">
-                                <img src="{{ asset('images/esr.png') }}" alt="logo" class="img-fluid" id="logo_footer">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <h5>2025 Todos los derechos reservados &copy;</h5>
-        </div>
-    </footer>
 
     <!-- Modal -->
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitulo" aria-hidden="true">

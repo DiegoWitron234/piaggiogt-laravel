@@ -39,25 +39,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item me-3">
+                <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'inicio' ? 'active' : '' }}"
                        href="{{ route('inicio') }}">Inicio</a>
                 </li>
-                <li class="nav-item me-3">
+                <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'empresa' ? 'active' : '' }}"
                        href="{{ route('empresa') }}">Empresa</a>
                 </li>
-                <li class="nav-item me-3">
+                <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'vehiculos' ? 'active' : '' }}"
                        href="{{ route('vehiculos') }}">Vehículos</a>
                 </li>
-                <li class="nav-item me-3">
+                <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'servicios' ? 'active' : '' }}"
                        href="{{ route('servicios') }}">Servicios</a>
                 </li>
-                <li class="nav-item me-3">
+                <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'repuestos' ? 'active' : '' }}"
                        href="{{ route('repuestos') }}">Repuestos</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link {{ Route::currentRouteName() == 'distribuidores' ? 'active' : '' }}"
+                       href="{{ route('distribuidores') }}">Ser Distribuidor</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ Route::currentRouteName() == 'contacto' ? 'active' : '' }}"
