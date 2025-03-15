@@ -27,7 +27,7 @@
     <!-- ...otros símbolos... -->
 </svg>
 
-<!-- Header / Barra de navegación -->
+<!-- Header / Barra de navegación / Navbar-->
 <header class="bg-light border-bottom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light container">
         <a class="navbar-brand" href="{{ route('inicio') }}">
@@ -39,21 +39,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item me-5">
+                <li class="nav-item me-3">
                     <a class="nav-link {{ Route::currentRouteName() == 'inicio' ? 'active' : '' }}"
                        href="{{ route('inicio') }}">Inicio</a>
                 </li>
-                <li class="nav-item me-5">
+                <li class="nav-item me-3">
                     <a class="nav-link {{ Route::currentRouteName() == 'empresa' ? 'active' : '' }}"
                        href="{{ route('empresa') }}">Empresa</a>
                 </li>
-                <li class="nav-item me-5">
+                <li class="nav-item me-3">
                     <a class="nav-link {{ Route::currentRouteName() == 'vehiculos' ? 'active' : '' }}"
                        href="{{ route('vehiculos') }}">Vehículos</a>
                 </li>
-                <li class="nav-item me-5">
+                <li class="nav-item me-3">
                     <a class="nav-link {{ Route::currentRouteName() == 'servicios' ? 'active' : '' }}"
                        href="{{ route('servicios') }}">Servicios</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link {{ Route::currentRouteName() == 'repuestos' ? 'active' : '' }}"
+                       href="{{ route('repuestos') }}">Repuestos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ Route::currentRouteName() == 'contacto' ? 'active' : '' }}"
