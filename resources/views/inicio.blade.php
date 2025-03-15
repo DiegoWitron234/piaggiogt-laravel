@@ -163,6 +163,13 @@
         <hr class="featurette-divider" data-aos="fade-up">
     </div>
 
+    <!-- Icono flotante de WhatsApp -->
+    <section class="div-flotante">
+        <a href="https://wa.me/50240484777?text=Hola, deseo información." target="_blank" class="icono-flotante">
+            <img src="{{ asset('main/images/redes-iconos/whatsapp.png') }}" loading="lazy" alt="WhatsApp" class="icono-flotante-img">
+        </a>
+    </section>
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="{{ asset('/main/js/inicio.js')}}"></script>

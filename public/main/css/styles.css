@@ -1,4 +1,6 @@
-/* Colores corporativos */
+/* =============================
+   1. Variables (colores, etc.)
+   ============================= */
 :root {
     --color-principal: #5fa0d7; /* El color de las barras */
     --blanco: #ffffff;
@@ -6,8 +8,27 @@
     --negro: #000000;
 }
 
+/* =============================
+   2. Reset / Tipografía global
+   ============================= */
+/* Ajuste de tipografía para una apariencia más moderna */
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
-/* Pie de página */
+/* Necesario para compensar la barra de navegación fixed-top */
+body {
+    padding-top: 70px;
+}
+
+/* =============================
+   3. Footer
+   ============================= */
 footer.bg-light {
     background-image: url('../images/barra completa.jpg');
     color: var(--blanco);
@@ -17,13 +38,13 @@ footer.bg-light {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Necesario para posicionar elementos hijos de forma absoluta */
+    position: relative; /* Para posicionar hijos de forma absoluta */
 }
 
 /* Posicionar el enlace "Volver al principio" en la esquina superior derecha */
 footer.bg-light .float-end {
     position: absolute;
-    right: 10px;       /* Ajusta según necesites */
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -34,51 +55,72 @@ footer.bg-light .float-end a {
     text-decoration: none;
 }
 
-
-
+/* =============================
+   4. Animaciones / Hover
+   ============================= */
 .hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-lift:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* =============================
+   5. Navbar
+   ============================= */
 /* Separación entre los botones del navbar */
 .navbar-nav .nav-item {
-  margin-right: 4.5rem; /* Ajusta este valor según lo necesites */
+    margin-right: 4.5rem; /* Ajusta según necesites */
 }
+
 /* Animación de subrayado en los links del navbar */
 .nav-link {
-  position: relative;
-  transition: color 0.3s ease;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 .nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px; /* Ajusta según necesites */
-  width: 0;
-  height: 2px;
-  background: var(--color-principal); /* Usa tu color corporativo */
-  transition: width 0.3s ease;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajusta según necesites */
+    width: 0;
+    height: 2px;
+    background: var(--color-principal);
+    transition: width 0.3s ease;
 }
 
 .nav-link:hover::after,
 .nav-link.active::after {
-  width: 100%;
+    width: 100%;
 }
 
 /* Opcional: animación de color en el link */
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--color-principal);
+    color: var(--color-principal);
 }
 
-/* Ajuste de tipografía para una apariencia más moderna */
-body, p, h1, h2, h3, h4 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+/* =============================
+   6. (Opcional) Clases de Bootstrap examples
+   =============================
+   Si NO usas estas clases en ningún lugar,
+   puedes eliminarlas. Por ejemplo:
 
+   .bd-placeholder-img,
+   .bd-placeholder-img-lg,
+   .b-example-divider,
+   .b-example-vr,
+   .bi,
+   .nav-scroller,
+   .nav-scroller .nav,
+   .btn-bd-primary,
+   .bd-mode-toggle,
+   .bd-mode-toggle .dropdown-menu .active .bi
+   etc.
+
+   Verifica en tu proyecto si no están en uso,
+   y si no, bórralas.
+*/
