@@ -98,7 +98,7 @@
                         </div>
 
                         <div class="color-circle mx-1"
-                             data-img="{{ asset('main/images/ape-city/apecityceleste.webp') }}"
+                             data-img="{{ asset('main/images/ape-city/apecityazul.webp') }}"
                              style="width: 25px; height: 25px; border-radius: 50%; background-color: #0a78d7; cursor: pointer;">
                         </div>
 
@@ -154,7 +154,7 @@
                         </div>
 
                         <div class="color-circle mx-1"
-                             data-img="{{ asset('main/images/ape-city-nxt/nxtceleste.webp') }}"
+                             data-img="{{ asset('main/images/ape-city-nxt/nxtazul.webp') }}"
                              style="width: 25px; height: 25px; border-radius: 50%; background-color: #0a78d7; cursor: pointer;">
                         </div>
 
