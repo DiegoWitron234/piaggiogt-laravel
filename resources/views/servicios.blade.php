@@ -20,11 +20,11 @@
     </section>
 
     <!-- Sección Garantía -->
-    <section class="section my-5 p-0 bg-servicios" id="garantia">
+    <section class="section  p-0 bg-servicios" id="garantia">
         <div class="container-fluid px-5">
-            <div class="row no-gutters align-items-center">
+            <div class="row no-gutters align-items-start">
                 <!-- Imagen e icono de Garantía -->
-                <div class="col-md-6 col-12 text-center position-relative" data-aos="fade-right">
+                <div class="col-md-6 col-12 text-center position-relative mt-4" data-aos="fade-right">
                     <img src="https://piaggiomx.com/images/servicios/53f006921c5315a93de21e926d35db2e.webp" alt="Imagen Garantía" class="img-fluid" id="imagen_garantia">
                     <div class="icono-garantia">
                         <img class="img-fluid" src="https://piaggiomx.com/images/servicios/f5beb03ba29438c323bc2bd3daae0a73.webp" alt="Icono Garantía">
@@ -33,7 +33,7 @@
                 <!-- Contenido de Garantía -->
                 <div class="col-md-6 col-12 p-md-5 d-flex flex-column justify-content-center" data-aos="fade-left">
                     <h2 class="titulo-servicios" data-aos="fade-up" data-aos-duration="1000">Garantía</h2>
-                    <div class="mt-md-5 text-justify" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="mt-md-3 text-justify" data-aos="fade-up" data-aos-duration="2000">
                         <p>
                             La garantía de su vehículo PIAGGIO es de 12 meses o 12,000 kilómetros, lo que ocurra primero, contada a partir de la fecha de entrega al cliente. Es fundamental que las revisiones y el mantenimiento indicados en esta póliza se realicen en un centro de servicio autorizado PIAGGIO para hacerla efectiva.
                         </p>
