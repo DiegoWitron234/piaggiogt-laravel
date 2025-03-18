@@ -163,17 +163,19 @@
 
 
     <!-- Cabecera de sección con imagen de fondo -->
-    <section class="single-page-header" style="background-image: url('{{ asset('images/redes.jpg') }}');">
+    <section class="single-page-header" style="background-image: url(https://piaggiomx.com/images/cabeceras/c935ddfe3ff4748fa5593a4b756a8a95.webp); background-size: 100%; background-repeat: no-repeat; position: relative; height: 280px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="titulo" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center" data-aos-delay="300">
-                        Conviértete en<br> distribuidor
+                        Conviértete en <br> distribuidor
                     </h1>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Subcabecera -->
     <section class="single-page-subheader py-5">
@@ -317,7 +319,7 @@
                     <p>Para poder formar parte de nuestra red de distribuidores y gozar de los beneficios que Piaggio le otorga deberás cumplir con los requisitos mínimos:</p>
                     <p>Primera compra para ser un distribuidor Piaggio.</p>
                     <p>- 5 unidades de contado de cualquiera de nuestros productos disponibles.</p>
-                    <p>- $180,000.00 en refacciones</p>
+                    <p>- $180,000.00 en Repuestos</p>
                     <p>- Plantilla mínima de personal</p>
                     <p>Esperamos tu solicitud para brindarte más información y unirte a esta Gran Familia Piaggio.</p>
                 </div>
