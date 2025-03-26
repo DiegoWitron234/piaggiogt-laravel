@@ -75,7 +75,7 @@
                     <p>Para poder formar parte de nuestra red de distribuidores y gozar de los beneficios que Piaggio otorga, deberás cumplir con los requisitos mínimos:</p>
                     <ul>
                         <li>Compra inicial de 5 unidades de contado de cualquiera de nuestros productos disponibles.</li>
-                        <li>$180,000.00 en refacciones</li>
+                        <li>Q 70,000.00 en refacciones</li>
                         <li>Plantilla mínima de personal</li>
                     </ul>
                     <p>Esperamos tu solicitud para brindarte más información y unirte a esta gran familia Piaggio.</p>
