@@ -83,11 +83,6 @@
                         </div>
 
                         <div class="color-circle mx-1"
-                             data-img="{{ asset('main/images/ape-city/apecityceleste.webp') }}"
-                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #20979f; cursor: pointer;">
-                        </div>
-
-                        <div class="color-circle mx-1"
                              data-img="{{ asset('main/images/ape-city/apecitynegro.webp') }}"
                              style="width: 25px; height: 25px; border-radius: 50%; background-color: #000000; cursor: pointer;">
                         </div>
@@ -136,11 +131,6 @@
                         <div class="color-circle mx-1"
                              data-img="{{ asset('main/images/ape-city-nxt/nxtazuloscuro.webp') }}"
                              style="width: 25px; height: 25px; border-radius: 50%; background-color: #0000b8; cursor: pointer;">
-                        </div>
-
-                        <div class="color-circle mx-1"
-                             data-img="{{ asset('main/images/ape-city-nxt/nxtceleste.webp') }}"
-                             style="width: 25px; height: 25px; border-radius: 50%; background-color: #20979f; cursor: pointer;">
                         </div>
 
                         <div class="color-circle mx-1"
