@@ -15,6 +15,8 @@
     <!-- Estilos personalizados para el carousel (si los usas) -->
     <link href="{{ asset('main/css/carousel.css') }}" rel="stylesheet">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     @yield('extra_head')
 </head>
 <body>
@@ -57,10 +59,12 @@
                     <a class="nav-link {{ Route::currentRouteName() == 'servicios' ? 'active' : '' }}"
                        href="{{ route('servicios') }}">Servicios</a>
                 </li>
+                <!--
                 <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'repuestos' ? 'active' : '' }}"
                        href="{{ route('repuestos') }}">Repuestos</a>
                 </li>
+                -->
                 <li class="nav-item me-4">
                     <a class="nav-link {{ Route::currentRouteName() == 'distribuidores' ? 'active' : '' }}"
                        href="{{ route('distribuidores') }}">Ser Distribuidor</a>

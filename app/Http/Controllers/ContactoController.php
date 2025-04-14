@@ -30,7 +30,7 @@ class ContactoController extends Controller
 
         // Enviar el correo.
         Mail::send('emails.contacto', $data, function ($message) use ($data) {
-            $message->to('diego.prueba@piaggiomx.com', 'Piaggiogt')
+            $message->to('ventas@piaggiogt.com', 'Piaggiogt')
                 ->subject('Nuevo mensaje de contacto de ' . $data['nombre'])
                 ->replyTo($data['correo'], $data['nombre']);
         });

@@ -189,7 +189,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <form class="form row align-items-baseline" id="form_distribuidor">
+                    <form class="form row align-items-baseline" id="form_distribuidor" action="{{ route('distribuidores.send') }}" method="POST">
                         @csrf
                         <div class="mb-3 col-md-6">
                             <label for="nombre">Nombre(s)</label>
@@ -202,42 +202,31 @@
                             <span class="invalid-feedback"></span>
                         </div>
                         <div class="mb-3 col-md-6">
-                            <label for="estado">Estado</label>
+                            <label for="estado">Departamento</label>
                             <select name="estado" id="estado" class="form-control">
                                 <option value="">Selecciona</option>
-                                <!-- Opciones de estados -->
-                                <option value="Aguascalientes">Aguascalientes</option>
-                                <option value="Baja California">Baja California</option>
-                                <option value="Baja California Sur">Baja California Sur</option>
-                                <option value="Campeche">Campeche</option>
-                                <option value="Chiapas">Chiapas</option>
-                                <option value="Chihuahua">Chihuahua</option>
-                                <option value="Ciudad de México">Ciudad de México</option>
-                                <option value="Coahuila de Zaragoza">Coahuila de Zaragoza</option>
-                                <option value="Colima">Colima</option>
-                                <option value="Durango">Durango</option>
-                                <option value="Guanajuato">Guanajuato</option>
-                                <option value="Guerrero">Guerrero</option>
-                                <option value="Hidalgo">Hidalgo</option>
-                                <option value="Jalisco">Jalisco</option>
-                                <option value="México">México</option>
-                                <option value="Michoacán de Ocampo">Michoacán de Ocampo</option>
-                                <option value="Morelos">Morelos</option>
-                                <option value="Nayarit">Nayarit</option>
-                                <option value="Nuevo León">Nuevo León</option>
-                                <option value="Oaxaca">Oaxaca</option>
-                                <option value="Puebla">Puebla</option>
-                                <option value="Querétaro">Querétaro</option>
-                                <option value="Quintana Roo">Quintana Roo</option>
-                                <option value="San Luis Potosí">San Luis Potosí</option>
-                                <option value="Sinaloa">Sinaloa</option>
-                                <option value="Sonora">Sonora</option>
-                                <option value="Tabasco">Tabasco</option>
-                                <option value="Tamaulipas">Tamaulipas</option>
-                                <option value="Tlaxcala">Tlaxcala</option>
-                                <option value="Veracruz de Ignacio de la Llave">Veracruz de Ignacio de la Llave</option>
-                                <option value="Yucatán">Yucatán</option>
-                                <option value="Zacatecas">Zacatecas</option>
+                                <option value="Alta Verapaz">Alta Verapaz</option>
+                                <option value="Baja Verapaz">Baja Verapaz</option>
+                                <option value="Chimaltenango">Chimaltenango</option>
+                                <option value="Chiquimula">Chiquimula</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="El Progreso">El Progreso</option>
+                                <option value="Escuintla">Escuintla</option>
+                                <option value="Huehuetenango">Huehuetenango</option>
+                                <option value="Izabal">Izabal</option>
+                                <option value="Jalapa">Jalapa</option>
+                                <option value="Jutiapa">Jutiapa</option>
+                                <option value="Petén">Petén</option>
+                                <option value="Quetzaltenango">Quetzaltenango</option>
+                                <option value="Quiché">Quiché</option>
+                                <option value="Retalhuleu">Retalhuleu</option>
+                                <option value="Sacatepéquez">Sacatepéquez</option>
+                                <option value="San Marcos">San Marcos</option>
+                                <option value="Santa Rosa">Santa Rosa</option>
+                                <option value="Sololá">Sololá</option>
+                                <option value="Suchitepéquez">Suchitepéquez</option>
+                                <option value="Totonicapán">Totonicapán</option>
+                                <option value="Zacapa">Zacapa</option>
                             </select>
                             <span class="invalid-feedback"></span>
                         </div>
@@ -319,7 +308,7 @@
                     <p>Para poder formar parte de nuestra red de distribuidores y gozar de los beneficios que Piaggio le otorga deberás cumplir con los requisitos mínimos:</p>
                     <p>Primera compra para ser un distribuidor Piaggio.</p>
                     <p>- 5 unidades de contado de cualquiera de nuestros productos disponibles.</p>
-                    <p>- $180,000.00 en Repuestos</p>
+                    <p>- Q70,000.00 en Repuestos</p>
                     <p>- Plantilla mínima de personal</p>
                     <p>Esperamos tu solicitud para brindarte más información y unirte a esta Gran Familia Piaggio.</p>
                 </div>
@@ -372,7 +361,7 @@
         $("#estado").on("change", function() {
             $.ajax({
                 type: "POST",
-                url: "{{ url('municipio') }}",
+                url: "{{ url('municipio-guatemala') }}",
                 data: {
                     _token: $("meta[name='csrf-token']").attr('content'),
                     estado: $("#estado").val()
