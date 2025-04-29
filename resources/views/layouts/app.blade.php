@@ -87,6 +87,7 @@
 
 <!-- Contenido principal -->
 <main>
+    <!--<p>Total de visitas: {{ $visitorCount }}</p>-->
     @yield('content')
 </main>
 
