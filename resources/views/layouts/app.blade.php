@@ -110,16 +110,16 @@
     <div class="container text-center">
         <p class="mb-0">&copy; 2025 Piaggio GT. Todos los derechos reservados.</p>
         <div class="mt-2 d-flex justify-content-center">
-            <a href="https://www.facebook.com/" target="_blank" class="mx-2">
+            <a href="https://www.facebook.com/profile.php?id=61575686114407&sk=about" target="_blank" class="mx-2">
                 <img src="{{ asset('main/images/redes-iconos/FBW.png') }}" alt="Facebook" style="height:30px;">
             </a>
-            <a href="https://www.instagram.com/" target="_blank" class="mx-2">
+            <a href="https://www.instagram.com/piaggio_guatemala?igsh=dWVxeGdxeTU5cmg5&utm_source=qr" target="_blank" class="mx-2">
                 <img src="{{ asset('main/images/redes-iconos/INW.png') }}" alt="Instagram" style="height:30px;">
             </a>
-            <a href="https://www.tiktok.com/" target="_blank" class="mx-2">
+            <a href="https://www.tiktok.com/@piaggio.comercial?_t=ZS-8w6oK7Sh3Yu&_r=1" target="_blank" class="mx-2">
                 <img src="{{ asset('main/images/redes-iconos/TTKW.png') }}" alt="TikTok" style="height:30px;">
             </a>
-            <a href="https://www.youtube.com/" target="_blank" class="mx-2">
+            <a href="https://youtube.com/@piaggio_comercial_guatemala?si=giRwOry4CD36eW4D" target="_blank" class="mx-2">
                 <img src="{{ asset('main/images/redes-iconos/YTW.png') }}" alt="YouTube" style="height:30px;">
             </a>
         </div>
