@@ -10,6 +10,9 @@ use App\Http\Controllers\DistribuidoresController;
 use App\Http\Controllers\MunicipioController;
 use Illuminate\Support\Facades\Route;
 
+use App\Exports\VisitorsExport;
+use Maatwebsite\Excel\Facades\Excel;
+
 Route::get('/', [HomeController::class, 'index'])->name('inicio');
 Route::get('/empresa', [EmpresaController::class, 'index'])->name('empresa');
 Route::get('/vehiculos', [VehiculoController::class, 'index'])->name('vehiculos');
@@ -24,3 +27,6 @@ Route::post('/distribuidores', [DistribuidoresController::class, 'send'])
 Route::post('municipio-guatemala', [MunicipioController::class, 'getMunicipiosGuatemala'])
     ->name('municipio.guatemala');
 
+Route::get('exportar-visitas', function () {
+    return Excel::download(new VisitorsExport, 'visitas_por_fecha.xlsx');
+});
